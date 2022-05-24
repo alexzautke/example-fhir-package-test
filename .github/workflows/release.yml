@@ -17,9 +17,12 @@ jobs:
      - name: Checkout Package Registry
        uses: actions/checkout@v3
        with:
-         repository: 'hl7germany/hl7-de-package-feed'
-         path: 'hl7-de-package-feed'
+        repository: 'hl7germany/hl7-de-package-feed'
+        path: 'hl7-de-package-feed'
          
      - name: Release-FHIR-Package-To-Registry (GitHub Actions)
        uses: alexzautke/fhir-package-registry-pipeline@v0.0.3
+       with:
+        SIMPLIFIER_USERNAME: ${{ secrets.SIMPLIFIER_USERNAME }}
+        SIMPLIFIER_PASSWORD: ${{ secrets.SIMPLIFIER_PASSWORD }}
 
