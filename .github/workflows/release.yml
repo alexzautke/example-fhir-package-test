@@ -13,17 +13,26 @@ jobs:
      steps:
      - name: Checkout code
        uses: actions/checkout@v3
+       with:
+        path: 'example-fhir-package-test'
         
      - name: Checkout Package Registry
        uses: actions/checkout@v3
        with:
         repository: 'hl7germany/hl7-de-package-feed'
         path: 'hl7-de-package-feed'
+        
+     - name: Checkout Package Registry
+       uses: actions/checkout@v3
+       with:
+        repository: 'alexzautke/update-fhir-package-feed'
+        path: 'update-fhir-package-feed'
          
      - name: Release-FHIR-Package-To-Registry (GitHub Actions)
-       uses: alexzautke/fhir-package-registry-pipeline@v0.0.10
+       uses: alexzautke/fhir-package-registry-pipeline@v0.0.12
        with:
         SIMPLIFIER_USERNAME: ${{ secrets.SIMPLIFIER_USERNAME }}
         SIMPLIFIER_PASSWORD: ${{ secrets.SIMPLIFIER_PASSWORD }}
+        PATH_TO_CONFORMANCE_RESOURCES: 'example-fhir-package-test'
         PACKAGE_FEED_REPO_PATH: 'hl7-de-package-feed'
 
