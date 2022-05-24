@@ -1,0 +1,20 @@
+name: Release FHIR Package to Package Registry
+
+# Controls when the action will run. 
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+ 
+ jobs:
+ 
+   CI_FHIR_RELEASE_PACKAGE:
+     runs-on: ubuntu-latest
+    
+     steps:
+     - name: Checkout code
+       uses: actions/checkout@v3
+        
+     - name: Checkout Package Registry
+       uses: actions/checkout@v3
+       with:
+         repository: 'https://github.com/hl7germany/hl7-de-package-feed'
