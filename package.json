@@ -1,13 +1,11 @@
 {
-  "name": null,
-  "version": null,
-  "description": null,
-  "author": null,
+  "name": "example-fhir-package-test",
+  "version": "0.0.1",
+  "description": "example-fhir-package-test",
+  "author": "alexanderzautke",
   "fhirVersions": [
     "4.0.1"
   ],
-  "devDependencies": null,
-  "canonicals": null,
   "dependencies": {
     "acme.base.r4": "4.0.3"
   }
