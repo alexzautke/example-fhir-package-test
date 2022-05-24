@@ -38,7 +38,7 @@ jobs:
         BASE_URL_PACKAGE_FEED: "https://github.com/hl7germany/hl7-de-package-feed/"
         
      - name: Add & Commit
-       uses: EndBug/add-and-commit@v9
+       uses: EndBug/add-and-commit@v7
        with:
         cwd: '../hl7-de-package-feed'
 
