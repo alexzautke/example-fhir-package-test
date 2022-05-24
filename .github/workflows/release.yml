@@ -21,7 +21,7 @@ jobs:
         path: 'hl7-de-package-feed'
          
      - name: Release-FHIR-Package-To-Registry (GitHub Actions)
-       uses: alexzautke/fhir-package-registry-pipeline@v0.0.9
+       uses: alexzautke/fhir-package-registry-pipeline@v0.0.10
        with:
         SIMPLIFIER_USERNAME: ${{ secrets.SIMPLIFIER_USERNAME }}
         SIMPLIFIER_PASSWORD: ${{ secrets.SIMPLIFIER_PASSWORD }}
