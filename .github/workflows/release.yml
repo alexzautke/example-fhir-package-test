@@ -15,18 +15,21 @@ jobs:
        uses: actions/checkout@v3
        with:
         path: 'example-fhir-package-test'
+        token: ${{ secrets.GitHub_Personal_Access_Token }}
         
      - name: Checkout Package Registry
        uses: actions/checkout@v3
        with:
         repository: 'hl7germany/hl7-de-package-feed'
         path: 'hl7-de-package-feed'
+        token: ${{ secrets.GitHub_Personal_Access_Token }}
         
      - name: Checkout Update Package Registry Script
        uses: actions/checkout@v3
        with:
         repository: 'alexzautke/update-fhir-package-feed'
         path: 'update-fhir-package-feed'
+        token: ${{ secrets.GitHub_Personal_Access_Token }}
          
      - name: Release-FHIR-Package-To-Registry (GitHub Actions)
        uses: alexzautke/fhir-package-registry-pipeline@v0.0.26
