@@ -17,4 +17,4 @@ jobs:
      - name: Checkout Package Registry
        uses: actions/checkout@v3
        with:
-         repository: 'https://github.com/hl7germany/hl7-de-package-feed'
+         repository: 'hl7germany/hl7-de-package-feed'
