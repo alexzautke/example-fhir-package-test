@@ -35,4 +35,5 @@ jobs:
         SIMPLIFIER_PASSWORD: ${{ secrets.SIMPLIFIER_PASSWORD }}
         PATH_TO_CONFORMANCE_RESOURCES: 'example-fhir-package-test'
         PACKAGE_FEED_REPO_PATH: 'hl7-de-package-feed'
+        BASE_URL_PACKAGE_FEED: "https://github.com/hl7germany/hl7-de-package-feed/"
 
