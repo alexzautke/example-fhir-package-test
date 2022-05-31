@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="ACMEGithubProjectPatient" />
-  <url value="http://fake-acme.org/fhir/StructureDefinition/ACMEGithubProjectPatient" />
-  <name value="ACMEGithubProjectPatient" />
+  <id value="Hl7DeGithubPackageTestPatient" />
+  <url value="http://fhir.de/StructureDefinition/Hl7DeGithubPackageTestPatient" />
+  <name value="Hl7DeGithubPackageTestPatient" />
   <status value="draft" />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -38,7 +38,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Patient" />
-  <baseDefinition value="https://fake-acme.org/fhir/StructureDefinition/ACME-base-patient" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Patient" />
   <derivation value="constraint" />
   <differential>
     <element id="Patient.name">
