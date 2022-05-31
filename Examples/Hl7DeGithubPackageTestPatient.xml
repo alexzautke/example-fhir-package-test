@@ -2,11 +2,8 @@
 <Patient xmlns="http://hl7.org/fhir">
   <id value="AmyShaw-patient-VALID" />
   <meta>
-    <profile value="https://fake-acme.org/fhir/StructureDefinition/ACME-base-patient" />
+    <profile value="http://fhir.de/StructureDefinition/Hl7DeGithubPackageTestPatient" />
   </meta>
-  <extension url="http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex">
-    <valueCode value="F" />
-  </extension>
   <identifier>
     <use value="usual" />
     <type>
