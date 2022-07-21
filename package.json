@@ -1,7 +1,7 @@
 {
-  "name": "de.fhir-package-registry-test",
+  "name": "de.test.fhir-package-registry-test.",
   "version": "0.0.1",
-  "description": "de.fhir-package-registry-test",
+  "description": "de.test.fhir-package-registry-test",
   "author": "alexanderzautke",
   "fhirVersions": [
     "4.0.1"
