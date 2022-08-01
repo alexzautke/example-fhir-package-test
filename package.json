@@ -1,6 +1,6 @@
 {
   "name": "de.hl7.test.fhir-package-registry",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "de.hl7.test.fhir-package-registry",
   "author": "alexanderzautke",
   "fhirVersions": [
